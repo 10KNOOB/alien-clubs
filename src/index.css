@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Genos:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  @font-face {
+    font-family: "Space";
+    src: url(./assets/fonts/Space\ Squadron.ttf);
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* hero page animation */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.video-docker-downsection video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker-downsection::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* .shape-blob {
+  background: #96ced8;
+  filter: blur(100px);
+  height: 200px;
+  width: 200px;
+  border-radius: 30% 50% 20% 40%;
+  animation: transform 20s ease-in-out infinite both alternate,
+    movement_one 40s ease-in-out infinite both;
+  opacity: 0.7;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+}
+.shape-blob.one {
+  background: #96ced8;
+  height: 500px;
+  width: 500px;
+  left: -200px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob.two {
+  background: #d9d1ae;
+  height: 350px;
+  width: 350px;
+  left: 500px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob.three {
+  background: #add2dd;
+  height: 350px;
+  width: 350px;
+  left: 450px;
+  top: 100px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
+}
+
+@keyframes movement_one {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
+  }
+}
+
+@keyframes movement_two {
+  0%,
+  500% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
+  }
+} */
+
+/* slider css start */
+
+/* slider css end */
+.outline_btn {
+  @apply flex items-center justify-center rounded-full border border-black bg-transparent px-5 py-1.5 text-center  text-sm text-black transition-all hover:bg-black hover:text-white;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 max-w-2xl text-lg text-gray-600 sm:text-xl;
+}
+
+.copy_btn {
+  @apply flex h-7 w-7 cursor-pointer items-center justify-center rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 p-5 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur;
+}
+
+.prompt_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+.feed {
+  @apply mx-auto mt-16 flex w-full max-w-xl flex-col items-center justify-center gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply mt-2 flex h-[200px] w-full rounded-lg p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply mt-2 flex w-full rounded-lg p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply text-lg font-semibold tracking-wide text-white max-sm:hidden;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 flex w-full min-w-[210px] flex-col items-end justify-end gap-2 rounded-lg bg-white p-5;
+}
+
+.dropdown_link {
+  @apply text-sm font-medium text-gray-700 hover:text-gray-500;
+}
+
+/* PromptCard Component */
+.prompt_card {
+  @apply h-fit w-full flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px];
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-start {
+  @apply flex items-start justify-start;
+}
+
+.flex-end {
+  @apply flex items-center justify-end;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.heading {
+  @apply text-center  text-3xl md:text-6xl;
+}
+
+.sub-heading {
+  @apply mt-5 text-center  text-xl font-medium md:text-2xl;
+}
+
+.outlined-text {
+  -webkit-text-stroke: 1px #cccccc;
+  -webkit-text-fill-color: transparent;
+}
+
+.blueBg {
+  background-color: #232323; /* Set the background color */
+  /* background-image: url("./assets/bg/bluebg.png");  */
+  background-repeat: no-repeat;
+  background-position: right center; /* Position the background image in the center */
+  background-size: 70%;
+  backdrop-filter: blur(8px);
+}
+
+@layer base {
+  html,
+  body {
+    @apply scroll-pt-[70px] scroll-smooth font-genos;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1200px] px-2;
+  }
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
