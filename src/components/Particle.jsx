@@ -98,11 +98,11 @@ const Particle = () => {
 
         // Disable random direction changes
         random: false,
-        trail: {
-          fill: { color: "#000" },
-          length: 20,
-          enable: true,
-        },
+        // trail: {
+        //   fill: { color: "#000" },
+        //   length: 20,
+        //   enable: true,
+        // },
       },
     },
   };
