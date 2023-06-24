@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+
 import Logo from "../assets/icons/logo-sc.webp";
 
 const Nav = () => {
@@ -11,18 +11,22 @@ const Nav = () => {
     {
       id: 1,
       link: "HOME",
+      path: "#home",
     },
     {
       id: 2,
       link: "ABOUT",
+      path: "#about",
     },
     {
       id: 3,
       link: "MINT",
+      path: "#mint",
     },
     {
       id: 4,
       link: "ROADMAP",
+      path: "#roadmap",
     },
   ];
 
@@ -48,20 +52,20 @@ const Nav = () => {
         {/* this is for large screen devices */}
         <div className="container  flex h-[70px] items-center justify-between ">
           <div className="font-twist flex  animate-text items-center bg-gradient-to-r from-[#F79413] via-[#627EEA] to-[#F08484] bg-clip-text text-5xl tracking-tighter text-transparent lg:w-2/6">
-            <NavLink to="/">
+            <a href="#home">
               <img src={Logo} alt="" className="h-14" />
-            </NavLink>
+            </a>
           </div>
 
           <div className="flex flex-row items-center justify-end  gap-5  text-white max-lg:hidden lg:w-2/6">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, link, path }) => (
               <nav
                 key={id}
                 className="greenbutton cursor-pointer font-chakra text-xl font-bold uppercase tracking-[2px]"
               >
-                <NavLink to="" duration={500}>
+                <a href={path} duration={500}>
                   {link}
-                </NavLink>
+                </a>
               </nav>
             ))}
           </div>
@@ -84,43 +88,16 @@ const Nav = () => {
         }
       >
         <ul className="mt-20">
-          <nav className="mx-4 my-4 cursor-pointer text-lg text-[#F79413] duration-200 hover:scale-110">
-            <NavLink to="" duration={500}>
-              X
-            </NavLink>
-          </nav>
-          <nav className="mx-4 my-4 cursor-pointer text-lg text-[#627EEA]  duration-200 hover:scale-110">
-            <NavLink to="" duration={500}>
-              Y
-            </NavLink>
-          </nav>
-          <nav className="mx-4 my-4 cursor-pointer text-lg text-[#F08484]  duration-200 hover:scale-110">
-            <NavLink to="" duration={500}>
-              Z
-            </NavLink>
-          </nav>
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, path }) => (
             <nav
               key={id}
               className="mx-4 my-4 cursor-pointer capitalize text-white"
             >
-              <NavLink onClick={() => setNav(!nav)} to={link} duration={500}>
+              <a onClick={() => setNav(!nav)} href={path} duration={500}>
                 {link}
-              </NavLink>
+              </a>
             </nav>
           ))}
-          <div className="mx-4 flex flex-row items-center  justify-end  gap-5 text-white">
-            {links.map(({ id, link }) => (
-              <nav
-                key={id}
-                className="cursor-pointer  rounded-full border-2 border-white  px-4 py-1 text-xl duration-200 hover:scale-110"
-              >
-                <NavLink to="" duration={500}>
-                  {link}
-                </NavLink>
-              </nav>
-            ))}
-          </div>
         </ul>
       </div>
     </div>

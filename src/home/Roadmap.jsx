@@ -3,7 +3,7 @@ import RoadMapC from "../components/RoadMapC";
 
 const Roadmap = () => {
   return (
-    <div className="moonbg">
+    <div className="moonbg" id="roadmap">
       <div className="bottom-left-moon"></div>
       <h1 className="Get-Alien-Clubs text-center uppercase">ROADMAP</h1>
       <p className=" text-center font-genos text-[25px] tracking-[2px] text-[#afe2b1]">

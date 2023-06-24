@@ -11,7 +11,7 @@ const ConnectWallet = () => {
   };
 
   return (
-    <div className="connect-wallet">
+    <div className="connect-wallet" id="mint">
       <div className="top-left-image"></div>
       <div className="bottom-right-image"></div>
 

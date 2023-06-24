@@ -3,7 +3,7 @@ import NftSlider from "./NftSlider";
 
 const NftCollection = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" id="about">
       <div className="container">
         <div className="mt-20 ">
           <h1 className="Alien-Clubs text-center">Alien Clubs</h1>

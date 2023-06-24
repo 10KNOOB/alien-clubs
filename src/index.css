@@ -288,7 +288,7 @@ html {
   animation: shake 2.5s linear forwards;
   color: #afe2b1;
   filter: blur(0.007em);
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: "Montserrat", "snas-serif";
   font-size: calc(20px + 5vw);
   font-weight: 700;
   position: relative;
@@ -302,7 +302,7 @@ html {
   animation: shake 2.5s linear forwards;
   color: #afe2b1;
   filter: blur(0.007em);
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: "Montserrat", "snas-serif";
   font-size: calc(20px + 2vw);
   font-weight: 700;
   position: relative;
@@ -330,6 +330,42 @@ html {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(-5px, 0);
+  }
+  40% {
+    transform: translate(5px, 0);
+  }
+  50% {
+    transform: translate(-5px, 0);
+  }
+  60% {
+    transform: translate(5px, 0);
+  }
+  70% {
+    transform: translate(-5px, 0);
+  }
+  80% {
+    transform: translate(5px, 0);
+  }
+  90% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 /* CenteredSlider.css */
@@ -427,8 +463,8 @@ html {
 .top-left-image,
 .bottom-right-image {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
   animation-name: rotate;
   animation-duration: 15s;
