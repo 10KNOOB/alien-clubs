@@ -4,7 +4,7 @@ import { NftData } from "../data/NftData";
 
 const MarqueeNft = () => {
   return (
-    <div className="mb-8">
+    <div className="mb-8" data-aos="fade-up" data-aos-duration="1000">
       <Marquee gradient={false} speed={60} pauseOnHover={true}>
         {NftData.map((item) => {
           return (

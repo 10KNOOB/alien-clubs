@@ -7,8 +7,18 @@ const RoadMapC = () => {
       <div className="roadmap-item">
         <div className="item-label max-sm:hidden">PHASΞ 1</div>
         <div className="item-content-wrapper one">
-          <div className="item-title">4200 ALPHA MALE ALIEN IDENTITY</div>
-          <div className="item-content">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-title"
+          >
+            4200 ALPHA MALE ALIEN IDENTITY
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-content"
+          >
             <ul className="list-disc">
               <li>Alien Awareness</li>
               <li>Alien mint (alienclub website)</li>
@@ -25,11 +35,21 @@ const RoadMapC = () => {
         </div>
       </div>
 
-      <div class="roadmap-item">
-        <div class="item-label  max-sm:hidden">PHASΞ 2</div>
-        <div class="item-content-wrapper two">
-          <div class="item-title">ALIENATE</div>
-          <div class="item-content ">
+      <div className="roadmap-item">
+        <div className="item-label  max-sm:hidden">PHASΞ 2</div>
+        <div className="item-content-wrapper two">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-title"
+          >
+            ALIENATE
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-content "
+          >
             <ul className="list-disc">
               <li>Alien Awareness </li>
               <li>Arrivals of the Female Alien Species</li>
@@ -42,12 +62,22 @@ const RoadMapC = () => {
         </div>
       </div>
 
-      <div class="roadmap-item">
-        <div class="item-label  max-sm:hidden">PHASΞ 3</div>
-        <div class="item-content-wrapper three">
-          <div class="item-title ">THE ALIEN PARTY</div>
-          <div class="item-content">
-            <span class="font-size">
+      <div className="roadmap-item">
+        <div className="item-label  max-sm:hidden">PHASΞ 3</div>
+        <div className="item-content-wrapper three">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-title "
+          >
+            THE ALIEN PARTY
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-content"
+          >
+            <span className="font-size">
               Owning a male and female alien automatically gives you a free baby
               Alien. All ideals of baby aliens would be drafted from the
               community which would be implemented to give astonishing benefits
@@ -57,11 +87,21 @@ const RoadMapC = () => {
         </div>
       </div>
 
-      <div class="roadmap-item">
-        <div class="item-label  max-sm:hidden">PHASΞ 4</div>
-        <div class="item-content-wrapper four">
-          <div class="item-title">GIFT &amp; REWARDS</div>
-          <div class="item-content">
+      <div className="roadmap-item">
+        <div className="item-label  max-sm:hidden">PHASΞ 4</div>
+        <div className="item-content-wrapper four">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-title"
+          >
+            GIFT &amp; REWARDS
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="item-content"
+          >
             <ul className="list-disc">
               <li>
                 All Alien babies will be airdropped to holders of alpha and beta
@@ -73,7 +113,7 @@ const RoadMapC = () => {
               </li>
               <li>
                 Hiring part time/full time/contract
-                <ul class="padding-left">
+                <ul className="padding-left">
                   <li>Cartoonist/animator</li>
                   <li>Social manager</li>
                   <li>Marketing agents</li>
